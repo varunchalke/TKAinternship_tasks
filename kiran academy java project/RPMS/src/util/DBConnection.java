@@ -10,9 +10,9 @@ public class DBConnection {
     private static final String URL =
             "jdbc:mysql://localhost:33100/rpms_db";
 
-    private static final String USER = "root";
+    private static final String USER = "abc";
 
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "123abc";
 
     public static Connection getConnection() throws SQLException {
 
