@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applications | Recruitment & Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+
+            </div>
+
+        </header>
+
+        <!-- Main Layout -->
+        <div class="layout">
+
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>
+                        Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>
+                        Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>
+                        Jobs
+                    </a>
+
+                    <a class="nav-link active" href="applications.html">
+                        <span class="nav-icon">▧</span>
+                        Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>
+                        Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>
+                        Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>
+                        Reports
+                    </a>
+
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages
+                    and placement outcomes from one place.
+                </div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+
+                        <h1>Applications</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> /
+                            Applications
+                        </div>
+                    </div>
+
+                    <div class="head-actions"></div>
+
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Total applications
+                            <span class="stat-icon">▧</span>
+                        </div>
+
+                        <div class="stat-value">1,200</div>
+
+                        <div class="stat-foot">
+                            Across active job openings
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Eligible
+                            <span class="stat-icon">✓</span>
+                        </div>
+
+                        <div class="stat-value">940</div>
+
+                        <div class="stat-foot">
+                            Eligibility verified
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Shortlisted
+                            <span class="stat-icon">☆</span>
+                        </div>
+
+                        <div class="stat-value">760</div>
+
+                        <div class="stat-foot">
+                            Moved to next stage
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Selected
+                            <span class="stat-icon">★</span>
+                        </div>
+
+                        <div class="stat-value">210</div>
+
+                        <div class="stat-foot">
+                            Awaiting offer / joining
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Application Filters -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Application filters</h2>
+                            <p>
+                                Track candidate applications through the recruitment pipeline
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <form class="filters">
+
+                            <div class="field">
+                                <label>Application ID</label>
+                                <input type="text" placeholder="APP1001">
+                            </div>
+
+                            <div class="field">
+                                <label>Candidate</label>
+                                <input type="text" placeholder="Candidate name">
+                            </div>
+
+                            <div class="field">
+                                <label>Company</label>
+                                <select>
+                                    <option>All companies</option>
+                                    <option>Infosys</option>
+                                    <option>Persistent</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Job</label>
+                                <select>
+                                    <option>All jobs</option>
+                                    <option>Associate Java Developer</option>
+                                    <option>QA Engineer</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Application status</label>
+                                <select>
+                                    <option>All statuses</option>
+                                    <option>APPLIED</option>
+                                    <option>SHORTLISTED</option>
+                                    <option>INTERVIEW_SCHEDULED</option>
+                                    <option>SELECTED</option>
+                                    <option>REJECTED</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Date from</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="field">
+                                <label>Date to</label>
+                                <input type="date">
+                            </div>
+
+                            <div class="filter-actions">
+                                <button type="button" class="btn btn-primary">
+                                    Search
+                                </button>
+
+                                <button type="reset" class="btn btn-secondary">
+                                    Reset
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+                <!-- Applications Table -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Applications pipeline</h2>
+                            <p>
+                                Sample applications and current recruitment status
+                            </p>
+                        </div>
+
+                        <span class="muted">Showing 12 records</span>
+
+                    </div>
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Application</th>
+                                    <th>Candidate</th>
+                                    <th>Company / Job</th>
+                                    <th>Applied on</th>
+                                    <th>Eligibility</th>
+                                    <th>Application status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>APP1001</td>
+                                    <td>
+                                        <a href="candidate-details.html">Rahul Patil</a>
+                                    </td>
+                                    <td>
+                                        Infosys
+                                        <div class="muted">Associate Java Developer</div>
+                                    </td>
+                                    <td>20 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status shortlisted">SHORTLISTED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1002</td>
+                                    <td>Sneha Nair</td>
+                                    <td>
+                                        Persistent
+                                        <div class="muted">Graduate Engineer Trainee</div>
+                                    </td>
+                                    <td>21 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status interview-scheduled">
+                                            INTERVIEW SCHEDULED
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1003</td>
+                                    <td>Aditya More</td>
+                                    <td>
+                                        Infosys
+                                        <div class="muted">Associate Java Developer</div>
+                                    </td>
+                                    <td>22 Oct 2026</td>
+                                    <td>
+                                        <span class="status not-eligible">NOT ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status rejected">REJECTED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1004</td>
+                                    <td>Priya Sharma</td>
+                                    <td>
+                                        Wipro
+                                        <div class="muted">Project Engineer</div>
+                                    </td>
+                                    <td>23 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status selected">SELECTED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1005</td>
+                                    <td>Rohan Desai</td>
+                                    <td>
+                                        Tech Mahindra
+                                        <div class="muted">Python Trainee</div>
+                                    </td>
+                                    <td>24 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status offered">OFFERED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1006</td>
+                                    <td>Kavya Iyer</td>
+                                    <td>
+                                        Persistent
+                                        <div class="muted">QA Engineer</div>
+                                    </td>
+                                    <td>25 Oct 2026</td>
+                                    <td>
+                                        <span class="status pending">PENDING</span>
+                                    </td>
+                                    <td>
+                                        <span class="status pending">APPLIED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1007</td>
+                                    <td>Vikram Kulkarni</td>
+                                    <td>
+                                        Infosys
+                                        <div class="muted">Associate Java Developer</div>
+                                    </td>
+                                    <td>26 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status scheduled">INTERVIEW SCHEDULED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1008</td>
+                                    <td>Sana Khan</td>
+                                    <td>
+                                        Wipro
+                                        <div class="muted">Project Engineer</div>
+                                    </td>
+                                    <td>27 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status rejected">REJECTED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1009</td>
+                                    <td>Vikram Kulkarni</td>
+                                    <td>
+                                        Capgemini
+                                        <div class="muted">Software Test Engineer</div>
+                                    </td>
+                                    <td>28 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status applied">APPLIED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1010</td>
+                                    <td>Kavya Iyer</td>
+                                    <td>
+                                        BluePeak Solutions
+                                        <div class="muted">Junior Data Analyst</div>
+                                    </td>
+                                    <td>29 Oct 2026</td>
+                                    <td>
+                                        <span class="status pending">PENDING</span>
+                                    </td>
+                                    <td>
+                                        <span class="status pending">APPLIED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1011</td>
+                                    <td>Rahul Patil</td>
+                                    <td>
+                                        Persistent
+                                        <div class="muted">Graduate Engineer Trainee</div>
+                                    </td>
+                                    <td>30 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status interviewed">INTERVIEWED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>APP1012</td>
+                                    <td>Sneha Nair</td>
+                                    <td>
+                                        Infosys
+                                        <div class="muted">Associate Java Developer</div>
+                                    </td>
+                                    <td>31 Oct 2026</td>
+                                    <td>
+                                        <span class="status eligible">ELIGIBLE</span>
+                                    </td>
+                                    <td>
+                                        <span class="status selected">SELECTED</span>
+                                    </td>
+                                    <td>
+                                        <a href="candidate-details.html">History</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- Prototype Actions -->
+                    <div class="panel-body">
+
+                        <div class="notice notice-info">
+                            Prototype actions: Check Eligibility · Shortlist · Reject ·
+                            Schedule Interview · View History. These controls are visual
+                            only and do not update records.
+                        </div>
+
+                        <div class="filter-actions">
+
+                            <button class="btn btn-secondary" type="button">
+                                Check eligibility
+                            </button>
+
+                            <button class="btn btn-primary" type="button">
+                                Shortlist
+                            </button>
+
+                            <button class="btn btn-danger" type="button">
+                                Reject
+                            </button>
+
+                            <a class="btn btn-secondary" href="interviews.html">
+                                Schedule interview
+                            </a>
+
+                            <button class="btn btn-secondary" type="button">
+                                View history
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System ·
+            Static HTML/CSS prototype ·
+            Sample data for demonstration only
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

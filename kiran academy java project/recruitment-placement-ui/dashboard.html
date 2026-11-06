@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Recruitment & Placement Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+            </div>
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+                    <a class="nav-link active" href="dashboard.html">
+                        <span class="nav-icon">▦</span>Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>Reports
+                    </a>
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages and placement outcomes from one place.
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+                        <h1>Dashboard</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> / Dashboard
+                        </div>
+                    </div>
+
+                    <div class="head-actions"></div>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Total Candidates
+                            <span class="stat-icon">♙</span>
+                        </div>
+
+                        <div class="stat-value">2,450</div>
+
+                        <div class="stat-foot">
+                            <span class="positive">↑ 8.4%</span>
+                            vs. last quarter
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Open Jobs
+                            <span class="stat-icon">▣</span>
+                        </div>
+
+                        <div class="stat-value">28</div>
+
+                        <div class="stat-foot">
+                            Across 12 hiring companies
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Interviews Today
+                            <span class="stat-icon">◷</span>
+                        </div>
+
+                        <div class="stat-value">14</div>
+
+                        <div class="stat-foot">
+                            5 online · 9 offline
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Placed Candidates
+                            <span class="stat-icon">✓</span>
+                        </div>
+
+                        <div class="stat-value">685</div>
+
+                        <div class="stat-foot">
+                            <span class="positive">↑ 12.6%</span>
+                            placement progress
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Recruitment Funnel and Quick Actions -->
+                <div class="grid-2">
+
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Recruitment funnel</h2>
+                                <p>Candidate movement across major stages</p>
+                            </div>
+
+                            <a href="reports.html">Full report →</a>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="funnel-row">
+                                <span>Applications</span>
+                                <div class="progress">
+                                    <span style="width:100%"></span>
+                                </div>
+                                <strong>1,200</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Shortlisted</span>
+                                <div class="progress">
+                                    <span style="width:63%"></span>
+                                </div>
+                                <strong>760</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Interviewed</span>
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+                                <strong>480</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Selected</span>
+                                <div class="progress">
+                                    <span style="width:17.5%"></span>
+                                </div>
+                                <strong>210</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Joined</span>
+                                <div class="progress">
+                                    <span style="width:14.6%"></span>
+                                </div>
+                                <strong>175</strong>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Quick actions</h2>
+                                <p>Common placement activities</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="quick-actions">
+
+                                <a class="quick-action" href="candidate-form.html">
+                                    <i>＋</i>Add candidate
+                                </a>
+
+                                <a class="quick-action" href="job-form.html">
+                                    <i>▣</i>Create job
+                                </a>
+
+                                <a class="quick-action" href="applications.html">
+                                    <i>▧</i>Review applications
+                                </a>
+
+                                <a class="quick-action" href="interviews.html">
+                                    <i>◷</i>Schedule interview
+                                </a>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Upcoming Interviews and Recent Jobs -->
+                <div class="grid-2">
+
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Upcoming interviews</h2>
+                                <p>Next scheduled candidate discussions</p>
+                            </div>
+
+                            <a href="interviews.html">View all →</a>
+                        </div>
+
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Candidate</th>
+                                        <th>Company / Round</th>
+                                        <th>Schedule</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="person">
+                                                <span class="mini-avatar">RP</span>
+
+                                                <span>
+                                                    <strong>Rahul Patil</strong>
+                                                    <span>CAN1001</span>
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>Infosys · Technical</td>
+                                        <td>03 Nov 2026, 11:30 AM</td>
+
+                                        <td>
+                                            <span class="status scheduled">SCHEDULED</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="person">
+                                                <span class="mini-avatar">SN</span>
+
+                                                <span>
+                                                    <strong> Sneha Nair</strong>
+                                                    <span>CAN1008</span>
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>Tech Mahindra · HR</td>
+                                        <td>03 Nov 2026, 02:00 PM</td>
+
+                                        <td>
+                                            <span class="status scheduled">SCHEDULED</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="person">
+                                                <span class="mini-avatar">AM</span>
+
+                                                <span>
+                                                    <strong>Aditya More</strong>
+                                                    <span>CAN1012</span>
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>Persistent · Aptitude</td>
+                                        <td>04 Nov 2026, 10:00 AM</td>
+
+                                        <td>
+                                            <span class="status pending">PENDING</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Recent job openings</h2>
+                                <p>Latest opportunities shared by companies</p>
+                            </div>
+
+                            <a href="jobs.html">View jobs →</a>
+                        </div>
+
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Company</th>
+                                        <th>Openings</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>Associate Java Developer</strong>
+                                            <div class="muted">JOB-2026-001</div>
+                                        </td>
+
+                                        <td>Infosys</td>
+                                        <td>15</td>
+
+                                        <td>
+                                            <span class="status open">OPEN</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>QA Engineer</strong>
+                                            <div class="muted">JOB-2026-004</div>
+                                        </td>
+
+                                        <td>Persistent</td>
+                                        <td>8</td>
+
+                                        <td>
+                                            <span class="status open">OPEN</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <strong>Python Trainee</strong>
+                                            <div class="muted">JOB-2026-006</div>
+                                        </td>
+
+                                        <td>Tech Mahindra</td>
+                                        <td>10</td>
+
+                                        <td>
+                                            <span class="status open">OPEN</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Recent Placements -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Recent placements</h2>
+                            <p>Latest joining confirmations</p>
+                        </div>
+
+                        <a href="placement-process.html">
+                            Placement process →
+                        </a>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Candidate</th>
+                                    <th>Company</th>
+                                    <th>Designation</th>
+                                    <th>Package</th>
+                                    <th>Joining status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Priya Sharma</td>
+                                    <td>Infosys</td>
+                                    <td>System Engineer</td>
+                                    <td>5.2 LPA</td>
+                                    <td>
+                                        <span class="status joined">JOINED</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rohan Desai</td>
+                                    <td>Wipro</td>
+                                    <td>Project Engineer</td>
+                                    <td>4.8 LPA</td>
+                                    <td>
+                                        <span class="status joined">JOINED</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype · Sample data for demonstration only
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Selection, Offer & Placement Process | Recruitment & Placement Management System
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+
+            </div>
+
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>
+                        Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>
+                        Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>
+                        Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>
+                        Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>
+                        Interviews
+                    </a>
+
+                    <a class="nav-link active" href="placement-process.html">
+                        <span class="nav-icon">✓</span>
+                        Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>
+                        Reports
+                    </a>
+
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages
+                    and placement outcomes from one place.
+                </div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+
+                        <h1>Selection, Offer & Placement Process</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a>
+                            / Selection, Offer & Placement Process
+                        </div>
+                    </div>
+
+                    <div class="head-actions"></div>
+
+                </div>
+
+                <!-- Candidate Details Banner -->
+                <section class="detail-banner">
+
+                    <div class="detail-avatar">RP</div>
+
+                    <div>
+                        <h2>Rahul Patil</h2>
+
+                        <p>
+                            CAN1001 · Infosys · Associate Java Developer · APP1001
+                        </p>
+
+                        <p style="margin-top:5px">
+                            Recruitment stage: Interview completed / decision pending
+                        </p>
+                    </div>
+
+                    <div class="detail-tags">
+                        <span class="status selected">SELECTED</span>
+                        <span class="status offered">OFFER PENDING</span>
+                    </div>
+
+                </section>
+
+                <!-- Placement Process Forms -->
+                <section class="panel">
+
+                    <div class="tabs">
+
+                        <a class="tab active" href="#feedback">
+                            1. Interview feedback
+                        </a>
+
+                        <a class="tab" href="#offer">
+                            2. Offer details
+                        </a>
+
+                        <a class="tab" href="#joining">
+                            3. Joining / placement
+                        </a>
+
+                    </div>
+
+                    <div class="panel-body" id="feedback">
+
+                        <!-- Interview Feedback -->
+                        <div class="form-section">
+
+                            <h3>Interview feedback</h3>
+
+                            <form>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Technical rating (1–5)</label>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="5"
+                                            step="0.5"
+                                            value="4.5"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Communication rating (1–5)</label>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="5"
+                                            step="0.5"
+                                            value="4"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Problem-solving rating (1–5)</label>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="5"
+                                            step="0.5"
+                                            value="4"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Overall rating (1–5)</label>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="5"
+                                            step="0.5"
+                                            value="4.2"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Interview result *</label>
+
+                                        <select>
+                                            <option>NEXT_ROUND</option>
+                                            <option selected>SELECTED</option>
+                                            <option>REJECTED</option>
+                                            <option>ON_HOLD</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field span-2">
+                                        <label>Feedback remarks</label>
+
+                                        <textarea>Good understanding of Java fundamentals and SQL. Communicates clearly and solves basic programming problems.</textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-footer">
+                                    <button type="button" class="btn btn-primary">
+                                        Save feedback (prototype)
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- Offer Details -->
+                        <div class="form-section" id="offer">
+
+                            <h3>Offer details</h3>
+
+                            <form>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Designation *</label>
+                                        <input value="Associate Java Developer">
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Offered package (LPA) *</label>
+                                        <input
+                                            type="number"
+                                            step="0.01"
+                                            value="5.20"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Offer date *</label>
+                                        <input
+                                            type="date"
+                                            value="2026-11-03"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Expected joining date</label>
+                                        <input
+                                            type="date"
+                                            value="2026-12-01"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Offer status</label>
+
+                                        <select>
+                                            <option>OFFERED</option>
+                                            <option selected>ACCEPTED</option>
+                                            <option>REJECTED</option>
+                                            <option>EXPIRED</option>
+                                            <option>WITHDRAWN</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Offer remarks</label>
+                                        <input placeholder="Optional notes">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-footer">
+                                    <button type="button" class="btn btn-primary">
+                                        Create / update offer (prototype)
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- Joining and Placement -->
+                        <div class="form-section" id="joining">
+
+                            <h3>Joining / placement</h3>
+
+                            <form>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Actual joining date</label>
+                                        <input type="date">
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Joining status</label>
+
+                                        <select>
+                                            <option>PENDING</option>
+                                            <option>JOINED</option>
+                                            <option>NOT_JOINED</option>
+                                            <option>DEFERRED</option>
+                                            <option>NO_SHOW</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Final package (LPA)</label>
+                                        <input
+                                            type="number"
+                                            step="0.01"
+                                            value="5.20"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Placement status</label>
+
+                                        <select>
+                                            <option>ACTIVE</option>
+                                            <option>CANCELLED</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-footer">
+
+                                    <button type="button" class="btn btn-secondary">
+                                        Confirm joining (prototype)
+                                    </button>
+
+                                    <button type="button" class="btn btn-primary">
+                                        Mark placed (prototype)
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Recent Offers and Placement Records -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Recent offers and placement records</h2>
+
+                            <p>
+                                Sample records demonstrating the offer-to-joining lifecycle
+                            </p>
+                        </div>
+
+                        <span class="muted">5 records</span>
+
+                    </div>
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Candidate</th>
+                                    <th>Company</th>
+                                    <th>Designation</th>
+                                    <th>Package</th>
+                                    <th>Offer status</th>
+                                    <th>Joining status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Priya Sharma</td>
+                                    <td>Infosys</td>
+                                    <td>System Engineer</td>
+                                    <td>5.2 LPA</td>
+                                    <td>
+                                        <span class="status accepted">ACCEPTED</span>
+                                    </td>
+                                    <td>
+                                        <span class="status joined">JOINED</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rohan Desai</td>
+                                    <td>Wipro</td>
+                                    <td>Project Engineer</td>
+                                    <td>4.8 LPA</td>
+                                    <td>
+                                        <span class="status accepted">ACCEPTED</span>
+                                    </td>
+                                    <td>
+                                        <span class="status joined">JOINED</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sana Khan</td>
+                                    <td>Persistent</td>
+                                    <td>QA Engineer</td>
+                                    <td>4.6 LPA</td>
+                                    <td>
+                                        <span class="status offered">OFFERED</span>
+                                    </td>
+                                    <td>
+                                        <span class="status pending">PENDING</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Aditya More</td>
+                                    <td>Tech Mahindra</td>
+                                    <td>Python Trainee</td>
+                                    <td>4.2 LPA</td>
+                                    <td>
+                                        <span class="status rejected">REJECTED</span>
+                                    </td>
+                                    <td>
+                                        <span class="status neutral">NOT_JOINED</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rahul Patil</td>
+                                    <td>Infosys</td>
+                                    <td>Associate Java Developer</td>
+                                    <td>5.2 LPA</td>
+                                    <td>
+                                        <span class="status accepted">ACCEPTED</span>
+                                    </td>
+                                    <td>
+                                        <span class="status pending">PENDING</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- Business Flow Notice -->
+                <div class="notice notice-info">
+                    Business flow: interview selection → offer creation →
+                    offer acceptance → joining confirmation → placement record.
+                    Buttons are illustrative and do not modify data.
+                </div>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype ·
+            Sample data for demonstration only
+        </footer>
+
+    </div>
+
+</body>
+</html>

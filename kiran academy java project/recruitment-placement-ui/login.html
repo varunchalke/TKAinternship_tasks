@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Recruitment & Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- Left Login Visual Section -->
+        <section class="login-visual">
+
+            <div class="brand" style="color:#fff">
+                <span class="brand-mark" style="background:#fff;color:#1d4ed8">
+                    RP
+                </span>
+
+                <span>
+                    Recruitment Portal
+                    <small style="color:#cbdcf3">
+                        Placement Management System
+                    </small>
+                </span>
+            </div>
+
+            <div>
+
+                <div class="eyebrow" style="color:#93c5fd">
+                    Kiran Academy · Placement operations
+                </div>
+
+                <h1>
+                    Connect talent with the right opportunity.
+                </h1>
+
+                <p>
+                    A centralized workspace to manage candidates, company openings,
+                    applications, interviews, offers and final placements.
+                </p>
+
+                <div class="login-feature">
+                    <b>✓</b> Candidate and employer management
+                </div>
+
+                <div class="login-feature">
+                    <b>✓</b> Recruitment pipeline visibility
+                </div>
+
+                <div class="login-feature">
+                    <b>✓</b> Interview, offer and joining tracking
+                </div>
+
+            </div>
+
+            <div style="color:#9fb3cc;font-size:11px">
+                © 2026 Recruitment & Placement Management System
+            </div>
+
+        </section>
+
+        <!-- Right Login Form Section -->
+        <section class="login-side">
+
+            <div class="login-card">
+
+                <span class="prototype-label">
+                    Authorized access only
+                </span>
+
+                <h2>Welcome back</h2>
+
+                <p>
+                    Sign in to continue to your placement workspace.
+                </p>
+
+                <form action="dashboard.html">
+
+                    <div class="field">
+                        <label for="username">Username / Email</label>
+
+                        <input
+                            id="username"
+                            type="email"
+                            placeholder="recruiter@demo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Password</label>
+
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="role">Role</label>
+
+                        <select id="role" required>
+                            <option value="">Select your role</option>
+                            <option>Admin</option>
+                            <option selected>Recruiter</option>
+                            <option>Placement Officer</option>
+                        </select>
+                    </div>
+
+                    <div
+                        style="
+                            display:flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            font-size:11px;
+                            margin:4px 0 12px
+                        "
+                    >
+
+                        <label style="color:#64748b">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#">Forgot password?</a>
+
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">
+                        Sign in to workspace →
+                    </button>
+
+                    <button
+                        class="btn btn-secondary"
+                        type="reset"
+                        style="margin-top:9px"
+                    >
+                        Reset
+                    </button>
+
+                </form>
+
+                <div class="login-foot">
+                    Demo prototype · Login form does not authenticate or save data.
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

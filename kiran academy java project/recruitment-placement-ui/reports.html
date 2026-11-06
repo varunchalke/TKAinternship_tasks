@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Recruitment & Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+
+            </div>
+
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>
+                        Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>
+                        Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>
+                        Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>
+                        Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>
+                        Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>
+                        Placement Process
+                    </a>
+
+                    <a class="nav-link active" href="reports.html">
+                        <span class="nav-icon">▥</span>
+                        Reports
+                    </a>
+
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages
+                    and placement outcomes from one place.
+                </div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+
+                        <h1>Reports</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> / Reports
+                        </div>
+                    </div>
+
+                    <div class="head-actions"></div>
+
+                </div>
+
+                <!-- Report Filters -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Report filters</h2>
+                            <p>
+                                Choose a period and dimensions for management reporting
+                            </p>
+                        </div>
+
+                        <span class="prototype-label">
+                            Sample reporting view
+                        </span>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <form class="filters">
+
+                            <div class="field">
+                                <label>Date from</label>
+                                <input type="date" value="2026-10-01">
+                            </div>
+
+                            <div class="field">
+                                <label>Date to</label>
+                                <input type="date" value="2026-11-03">
+                            </div>
+
+                            <div class="field">
+                                <label>Technology</label>
+
+                                <select>
+                                    <option>All technologies</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>Testing</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Company</label>
+
+                                <select>
+                                    <option>All companies</option>
+                                    <option>Infosys</option>
+                                    <option>Persistent</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Recruiter</label>
+
+                                <select>
+                                    <option>All recruiters</option>
+                                    <option>Arjun Kulkarni</option>
+                                    <option>Neha Joshi</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Passing year</label>
+
+                                <select>
+                                    <option>All batches</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-actions span-3">
+
+                                <button class="btn btn-primary" type="button">
+                                    Apply filters
+                                </button>
+
+                                <button class="btn btn-secondary" type="reset">
+                                    Reset
+                                </button>
+
+                                <button class="btn btn-secondary" type="button">
+                                    Print / Export
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+                <!-- Statistics Cards -->
+                <div class="stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            Applications
+                            <span class="stat-icon">▧</span>
+                        </div>
+
+                        <div class="stat-value">1,200</div>
+
+                        <div class="stat-foot">
+                            Selected reporting period
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            Interviews
+                            <span class="stat-icon">◷</span>
+                        </div>
+
+                        <div class="stat-value">480</div>
+
+                        <div class="stat-foot">
+                            40% of applications
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            Selected
+                            <span class="stat-icon">★</span>
+                        </div>
+
+                        <div class="stat-value">210</div>
+
+                        <div class="stat-foot">
+                            17.5% of applications
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            Joined
+                            <span class="stat-icon">✓</span>
+                        </div>
+
+                        <div class="stat-value">175</div>
+
+                        <div class="stat-foot">
+                            <span class="positive">83.3%</span>
+                            offer-to-join conversion
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Recruitment Funnel and Company-wise Placements -->
+                <div class="grid-2">
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <div>
+                                <h2>Recruitment funnel</h2>
+                                <p>Applications progressing through stages</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="funnel-row">
+                                <span>Applications</span>
+
+                                <div class="progress">
+                                    <span style="width:100%"></span>
+                                </div>
+
+                                <strong>1,200</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Shortlisted</span>
+
+                                <div class="progress">
+                                    <span style="width:63.3%"></span>
+                                </div>
+
+                                <strong>760</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Interviewed</span>
+
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+
+                                <strong>480</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Selected</span>
+
+                                <div class="progress">
+                                    <span style="width:17.5%"></span>
+                                </div>
+
+                                <strong>210</strong>
+                            </div>
+
+                            <div class="funnel-row">
+                                <span>Joined</span>
+
+                                <div class="progress">
+                                    <span style="width:14.6%"></span>
+                                </div>
+
+                                <strong>175</strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <div>
+                                <h2>Company-wise placements</h2>
+                                <p>Joined candidates by employer</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="table-wrap">
+
+                                <table style="min-width:0">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Joined</th>
+                                            <th>Share</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Infosys</td>
+                                            <td>52</td>
+                                            <td>29.7%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Wipro</td>
+                                            <td>38</td>
+                                            <td>21.7%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Persistent</td>
+                                            <td>32</td>
+                                            <td>18.3%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Tech Mahindra</td>
+                                            <td>28</td>
+                                            <td>16.0%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Other companies</td>
+                                            <td>25</td>
+                                            <td>14.3%</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <!-- Technology-wise Placements and Recruiter Performance -->
+                <div class="grid-2">
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <div>
+                                <h2>Technology-wise placements</h2>
+                                <p>Joined candidates by primary technology</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="table-wrap">
+
+                                <table style="min-width:0">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Technology</th>
+                                            <th>Placed</th>
+                                            <th>Percentage</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Java</td>
+                                            <td>76</td>
+                                            <td>43.4%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Python</td>
+                                            <td>42</td>
+                                            <td>24.0%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Testing</td>
+                                            <td>35</td>
+                                            <td>20.0%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Data Analytics</td>
+                                            <td>22</td>
+                                            <td>12.6%</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <div>
+                                <h2>Recruiter performance</h2>
+                                <p>Application and placement activity</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="table-wrap">
+
+                                <table style="min-width:0">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Recruiter</th>
+                                            <th>Applications</th>
+                                            <th>Joined</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Arjun Kulkarni</td>
+                                            <td>320</td>
+                                            <td>48</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Neha Joshi</td>
+                                            <td>285</td>
+                                            <td>42</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Ritesh Shah</td>
+                                            <td>240</td>
+                                            <td>36</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Anita Rao</td>
+                                            <td>190</td>
+                                            <td>29</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <!-- Pending Interviews and Open Job Aging -->
+                <div class="grid-2">
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <h2>Pending interviews</h2>
+                            <a href="interviews.html">View schedule →</a>
+                        </div>
+
+                        <div class="table-wrap">
+
+                            <table>
+
+                                <thead>
+                                    <tr>
+                                        <th>Candidate</th>
+                                        <th>Company</th>
+                                        <th>Scheduled</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Rahul Patil</td>
+                                        <td>Infosys</td>
+                                        <td>03 Nov 2026</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sneha Nair</td>
+                                        <td>Tech Mahindra</td>
+                                        <td>03 Nov 2026</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Aditya More</td>
+                                        <td>Persistent</td>
+                                        <td>04 Nov 2026</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </section>
+
+                    <section class="panel">
+
+                        <div class="panel-head">
+                            <h2>Open job aging</h2>
+                            <a href="jobs.html">View jobs →</a>
+                        </div>
+
+                        <div class="table-wrap">
+
+                            <table>
+
+                                <thead>
+                                    <tr>
+                                        <th>Job</th>
+                                        <th>Company</th>
+                                        <th>Age (days)</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Associate Java Developer</td>
+                                        <td>Infosys</td>
+                                        <td>18</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Graduate Engineer Trainee</td>
+                                        <td>Persistent</td>
+                                        <td>14</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Python Trainee</td>
+                                        <td>Tech Mahindra</td>
+                                        <td>9</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype ·
+            Sample data for demonstration only
+        </footer>
+
+    </div>
+
+</body>
+</html>

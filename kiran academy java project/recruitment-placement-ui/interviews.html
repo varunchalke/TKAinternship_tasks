@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews | Recruitment & Placement Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+            </div>
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>Applications
+                    </a>
+
+                    <a class="nav-link active" href="interviews.html">
+                        <span class="nav-icon">◷</span>Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>Reports
+                    </a>
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages and placement outcomes from one place.
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+                        <h1>Interviews</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> / Interviews
+                        </div>
+                    </div>
+
+                    <div class="head-actions"></div>
+                </div>
+
+                <!-- Interview Statistics -->
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Interviews today
+                            <span class="stat-icon">◷</span>
+                        </div>
+
+                        <div class="stat-value">14</div>
+
+                        <div class="stat-foot">
+                            Across all hiring partners
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Upcoming
+                            <span class="stat-icon">▦</span>
+                        </div>
+
+                        <div class="stat-value">32</div>
+
+                        <div class="stat-foot">
+                            Next 7 days
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Completed
+                            <span class="stat-icon">✓</span>
+                        </div>
+
+                        <div class="stat-value">186</div>
+
+                        <div class="stat-foot">
+                            Feedback submitted
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Pending feedback
+                            <span class="stat-icon">!</span>
+                        </div>
+
+                        <div class="stat-value">9</div>
+
+                        <div class="stat-foot">
+                            Action required
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Schedule Interview Form -->
+                <section class="panel" id="schedule-form">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Schedule an interview</h2>
+                            <p>Create a new interview round for an application</p>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <form>
+
+                            <div class="form-grid">
+
+                                <div class="field">
+                                    <label>Candidate *</label>
+                                    <select>
+                                        <option>Select candidate</option>
+                                        <option>Rahul Patil – CAN1001</option>
+                                        <option>Sneha Nair – CAN1002</option>
+                                        <option>Aditya More – CAN1003</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Company *</label>
+                                    <select>
+                                        <option>Select company</option>
+                                        <option>Infosys</option>
+                                        <option>Persistent Systems</option>
+                                        <option>Tech Mahindra</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Job *</label>
+                                    <select>
+                                        <option>Select job</option>
+                                        <option>Associate Java Developer</option>
+                                        <option>Graduate Engineer Trainee</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Interview round *</label>
+                                    <select>
+                                        <option>APTITUDE</option>
+                                        <option>TECHNICAL</option>
+                                        <option>MANAGERIAL</option>
+                                        <option>HR</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Interview date *</label>
+                                    <input type="date" value="2026-11-03">
+                                </div>
+
+                                <div class="field">
+                                    <label>Interview time *</label>
+                                    <input type="time" value="11:30">
+                                </div>
+
+                                <div class="field">
+                                    <label>Mode *</label>
+                                    <select>
+                                        <option>ONLINE</option>
+                                        <option>OFFLINE</option>
+                                        <option>TELEPHONIC</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Interviewer name</label>
+                                    <input placeholder="Interviewer">
+                                </div>
+
+                                <div class="field">
+                                    <label>Meeting link / location</label>
+                                    <input placeholder="Meeting URL or venue">
+                                </div>
+
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="reset" class="btn btn-secondary">
+                                    Reset
+                                </button>
+
+                                <button type="button" class="btn btn-primary">
+                                    Schedule interview (prototype)
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </section>
+
+                <!-- Interview Schedule Table -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Interview schedule</h2>
+                            <p>Today and upcoming interview rounds</p>
+                        </div>
+
+                        <span class="muted">03 Nov 2026</span>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Interview ID</th>
+                                    <th>Candidate</th>
+                                    <th>Company / Job</th>
+                                    <th>Round</th>
+                                    <th>Date & time</th>
+                                    <th>Mode</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>INT1008</td>
+
+                                    <td>
+                                        <a href="candidate-details.html">
+                                            Rahul Patil
+                                        </a>
+                                    </td>
+
+                                    <td>
+                                        Infosys
+                                        <div class="muted">Associate Java Developer</div>
+                                    </td>
+
+                                    <td>Technical</td>
+                                    <td>03 Nov 2026 · 11:30 AM</td>
+                                    <td>ONLINE</td>
+
+                                    <td>
+                                        <span class="status scheduled">SCHEDULED</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="placement-process.html">Feedback</a>
+                                            <a href="#schedule-form">Reschedule</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1009</td>
+                                    <td>Sneha Nair</td>
+
+                                    <td>
+                                        Tech Mahindra
+                                        <div class="muted">Python Trainee</div>
+                                    </td>
+
+                                    <td>HR</td>
+                                    <td>03 Nov 2026 · 02:00 PM</td>
+                                    <td>OFFLINE</td>
+
+                                    <td>
+                                        <span class="status scheduled">SCHEDULED</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="placement-process.html">Feedback</a>
+                                            <a href="#schedule-form">Reschedule</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1010</td>
+                                    <td>Aditya More</td>
+
+                                    <td>
+                                        Persistent
+                                        <div class="muted">Graduate Engineer Trainee</div>
+                                    </td>
+
+                                    <td>Aptitude</td>
+                                    <td>04 Nov 2026 · 10:00 AM</td>
+                                    <td>ONLINE</td>
+
+                                    <td>
+                                        <span class="status scheduled">SCHEDULED</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="placement-process.html">Feedback</a>
+                                            <a href="#schedule-form">Reschedule</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1005</td>
+                                    <td>Priya Sharma</td>
+
+                                    <td>
+                                        Wipro
+                                        <div class="muted">Project Engineer</div>
+                                    </td>
+
+                                    <td>Technical</td>
+                                    <td>02 Nov 2026 · 03:00 PM</td>
+                                    <td>ONLINE</td>
+
+                                    <td>
+                                        <span class="status neutral">COMPLETED</span>
+                                    </td>
+
+                                    <td>
+                                        <a href="placement-process.html">
+                                            View feedback
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1004</td>
+                                    <td>Rohan Desai</td>
+
+                                    <td>
+                                        Infosys
+                                        <div class="muted">System Engineer</div>
+                                    </td>
+
+                                    <td>HR</td>
+                                    <td>01 Nov 2026 · 12:00 PM</td>
+                                    <td>OFFLINE</td>
+
+                                    <td>
+                                        <span class="status cancelled">NO_SHOW</span>
+                                    </td>
+
+                                    <td>
+                                        <a href="placement-process.html">View</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1003</td>
+                                    <td>Kavya Iyer</td>
+
+                                    <td>
+                                        Persistent
+                                        <div class="muted">QA Engineer</div>
+                                    </td>
+
+                                    <td>Technical</td>
+                                    <td>31 Oct 2026 · 11:00 AM</td>
+                                    <td>ONLINE</td>
+
+                                    <td>
+                                        <span class="status neutral">COMPLETED</span>
+                                    </td>
+
+                                    <td>
+                                        <a href="placement-process.html">
+                                            View feedback
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT1002</td>
+                                    <td>Vikram Kulkarni</td>
+
+                                    <td>
+                                        Capgemini
+                                        <div class="muted">Software Test Engineer</div>
+                                    </td>
+
+                                    <td>Aptitude</td>
+                                    <td>30 Oct 2026 · 10:00 AM</td>
+                                    <td>TELEPHONIC</td>
+
+                                    <td>
+                                        <span class="status cancelled">CANCELLED</span>
+                                    </td>
+
+                                    <td>
+                                        <a href="placement-process.html">View</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Validation Reminder and Actions -->
+                    <div class="panel-body">
+
+                        <div class="notice notice-warning">
+                            Validation reminder: interview date should not be in the past. Reschedule and no-show controls are static in this prototype.
+                        </div>
+
+                        <div class="filter-actions">
+                            <button class="btn btn-secondary" type="button">
+                                Reschedule
+                            </button>
+
+                            <button class="btn btn-secondary" type="button">
+                                Add feedback
+                            </button>
+
+                            <button class="btn btn-danger" type="button">
+                                Mark no show
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype · Sample data for demonstration only
+        </footer>
+
+    </div>
+</body>
+</html>

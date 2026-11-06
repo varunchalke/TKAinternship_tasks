@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies | Recruitment & Placement Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <header class="topbar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+            </div>
+        </header>
+
+        <div class="layout">
+
+            <aside class="sidebar">
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>Candidates
+                    </a>
+
+                    <a class="nav-link active" href="companies.html">
+                        <span class="nav-icon">▤</span>Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>Reports
+                    </a>
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages and placement outcomes from one place.
+                </div>
+            </aside>
+
+            <main class="main">
+
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+                        <h1>Companies</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> / Companies
+                        </div>
+                    </div>
+
+                    <div class="head-actions">
+                        <a class="btn btn-primary" href="#company-form">
+                            ＋ Add company
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Company Directory -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Company directory</h2>
+                            <p>Maintain hiring partners and their contact information</p>
+                        </div>
+
+                        <span class="muted">8 registered companies</span>
+                    </div>
+
+                    <div class="panel-body">
+                        <form class="filters">
+
+                            <div class="field">
+                                <label>Company name</label>
+                                <input placeholder="Search company">
+                            </div>
+
+                            <div class="field">
+                                <label>Industry</label>
+                                <select>
+                                    <option>All industries</option>
+                                    <option>IT Services</option>
+                                    <option>Software</option>
+                                    <option>Consulting</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Location</label>
+                                <input placeholder="City">
+                            </div>
+
+                            <div class="field">
+                                <label>Status</label>
+                                <select>
+                                    <option>All statuses</option>
+                                    <option>ACTIVE</option>
+                                    <option>INACTIVE</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-actions span-3">
+                                <button type="button" class="btn btn-primary">
+                                    Search
+                                </button>
+
+                                <button type="reset" class="btn btn-secondary">
+                                    Reset
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Industry</th>
+                                    <th>Location</th>
+                                    <th>HR contact</th>
+                                    <th>Open jobs</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Infosys</strong>
+                                        <div class="muted">COM101 · infosys.com</div>
+                                    </td>
+                                    <td>IT Services</td>
+                                    <td>Pune</td>
+                                    <td>
+                                        Neha Joshi
+                                        <div class="muted">neha.j@company.example</div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>
+                                        <span class="status active">ACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Persistent Systems</strong>
+                                        <div class="muted">COM102 · persistent.com</div>
+                                    </td>
+                                    <td>Software</td>
+                                    <td>Pune</td>
+                                    <td>
+                                        Ritesh Shah
+                                        <div class="muted">ritesh.s@company.example</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>
+                                        <span class="status active">ACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Tech Mahindra</strong>
+                                        <div class="muted">COM103 · techmahindra.com</div>
+                                    </td>
+                                    <td>IT Services</td>
+                                    <td>Mumbai</td>
+                                    <td>
+                                        Anita Rao
+                                        <div class="muted">anita.r@company.example</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>
+                                        <span class="status active">ACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Wipro</strong>
+                                        <div class="muted">COM104 · wipro.com</div>
+                                    </td>
+                                    <td>IT Services</td>
+                                    <td>Pune</td>
+                                    <td>Manish Kulkarni</td>
+                                    <td>1</td>
+                                    <td>
+                                        <span class="status active">ACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Capgemini</strong>
+                                        <div class="muted">COM105 · capgemini.com</div>
+                                    </td>
+                                    <td>Consulting</td>
+                                    <td>Mumbai</td>
+                                    <td>Shreya Menon</td>
+                                    <td>2</td>
+                                    <td>
+                                        <span class="status active">ACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>BluePeak Solutions</strong>
+                                        <div class="muted">COM106</div>
+                                    </td>
+                                    <td>Software</td>
+                                    <td>Nashik</td>
+                                    <td>Vijay Patil</td>
+                                    <td>0</td>
+                                    <td>
+                                        <span class="status inactive">INACTIVE</span>
+                                    </td>
+                                    <td>
+                                        <a href="jobs.html">View jobs</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <!-- Company Information Form -->
+                <section class="panel" id="company-form">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Company information form</h2>
+                            <p>Prototype form fields for adding or updating an employer</p>
+                        </div>
+
+                        <span class="prototype-label">Static form</span>
+                    </div>
+
+                    <div class="panel-body">
+                        <form>
+
+                            <div class="form-grid">
+
+                                <div class="field">
+                                    <label>Company name *</label>
+                                    <input placeholder="Registered company name">
+                                </div>
+
+                                <div class="field">
+                                    <label>Industry *</label>
+                                    <input placeholder="IT Services">
+                                </div>
+
+                                <div class="field">
+                                    <label>Website</label>
+                                    <input type="url" placeholder="https://example.com">
+                                </div>
+
+                                <div class="field">
+                                    <label>Location *</label>
+                                    <input placeholder="Primary location">
+                                </div>
+
+                                <div class="field">
+                                    <label>HR name *</label>
+                                    <input placeholder="Contact person">
+                                </div>
+
+                                <div class="field">
+                                    <label>HR email *</label>
+                                    <input type="email" placeholder="hr@example.com">
+                                </div>
+
+                                <div class="field">
+                                    <label>HR mobile</label>
+                                    <input placeholder="Contact mobile">
+                                </div>
+
+                                <div class="field">
+                                    <label>Company type *</label>
+                                    <select>
+                                        <option>MNC</option>
+                                        <option>STARTUP</option>
+                                        <option>MID_SIZE</option>
+                                        <option>CONSULTANCY</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label>Status *</label>
+                                    <select>
+                                        <option>ACTIVE</option>
+                                        <option>INACTIVE</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-footer">
+                                <button class="btn btn-secondary" type="reset">
+                                    Reset
+                                </button>
+
+                                <button class="btn btn-primary" type="button">
+                                    Save company (prototype)
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype · Sample data for demonstration only
+        </footer>
+
+    </div>
+</body>
+</html>

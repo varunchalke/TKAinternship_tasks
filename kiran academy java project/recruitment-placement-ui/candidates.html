@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candidates | Recruitment & Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+
+            </div>
+
+        </header>
+
+        <!-- Main Layout -->
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link active" href="candidates.html">
+                        <span class="nav-icon">♙</span>
+                        Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>
+                        Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>
+                        Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>
+                        Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>
+                        Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>
+                        Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>
+                        Reports
+                    </a>
+
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+
+                    Manage candidates, employer relationships,
+                    recruitment stages and placement outcomes
+                    from one place.
+                </div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+
+                        <h1>Candidates</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a>
+                            / Candidates
+                        </div>
+                    </div>
+
+                    <div class="head-actions">
+
+                        <a class="btn btn-primary" href="candidate-form.html">
+                            ＋ Add candidate
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Candidate Search and Filters -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Find candidates</h2>
+
+                            <p>
+                                Search and filter the candidate directory
+                            </p>
+                        </div>
+
+                        <span class="muted">2,450 records</span>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <form class="filters">
+
+                            <div class="field">
+                                <label>Candidate ID</label>
+
+                                <input
+                                    type="text"
+                                    placeholder="e.g. CAN1001"
+                                >
+                            </div>
+
+                            <div class="field">
+                                <label>Candidate name</label>
+
+                                <input
+                                    type="text"
+                                    placeholder="Search name"
+                                >
+                            </div>
+
+                            <div class="field">
+                                <label>Mobile</label>
+
+                                <input
+                                    type="text"
+                                    placeholder="Mobile number"
+                                >
+                            </div>
+
+                            <div class="field">
+                                <label>Email</label>
+
+                                <input
+                                    type="email"
+                                    placeholder="Email address"
+                                >
+                            </div>
+
+                            <div class="field">
+                                <label>Technology</label>
+
+                                <select>
+                                    <option>All technologies</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>Testing</option>
+                                    <option>Data Analytics</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Passing year</label>
+
+                                <select>
+                                    <option>All years</option>
+                                    <option>2026</option>
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Qualification</label>
+
+                                <select>
+                                    <option>All qualifications</option>
+                                    <option>BE</option>
+                                    <option>BTech</option>
+                                    <option>MCA</option>
+                                    <option>BSc</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Placement status</label>
+
+                                <select>
+                                    <option>All statuses</option>
+                                    <option>Active</option>
+                                    <option>Placed</option>
+                                    <option>On Hold</option>
+                                    <option>Inactive</option>
+                                </select>
+                            </div>
+
+                            <!-- Filter Buttons -->
+                            <div class="filter-actions span-3">
+
+                                <button class="btn btn-primary" type="button">
+                                    Search candidates
+                                </button>
+
+                                <button class="btn btn-secondary" type="reset">
+                                    Reset
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+                <!-- Candidate Directory -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Candidate directory</h2>
+
+                            <p>
+                                Sample candidate records for prototype review
+                            </p>
+                        </div>
+
+                        <span class="muted">
+                            Showing 1–8 of 2,450
+                        </span>
+
+                    </div>
+
+                    <!-- Candidate Table -->
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Candidate</th>
+                                    <th>Technology</th>
+                                    <th>Qualification</th>
+                                    <th>Passing year</th>
+                                    <th>Percentage</th>
+                                    <th>Placement</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <!-- Candidate 1 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">RP</span>
+
+                                            <span>
+                                                <strong>Rahul Patil</strong>
+                                                <span>
+                                                    CAN1001 · rahul.patil@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Java</td>
+                                    <td>BE</td>
+                                    <td>2025</td>
+                                    <td>68.00%</td>
+
+                                    <td>
+                                        <span class="status active">
+                                            ACTIVE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 2 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">SN</span>
+
+                                            <span>
+                                                <strong>Sneha Nair</strong>
+                                                <span>
+                                                    CAN1002 · sneha.nair@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Python</td>
+                                    <td>MCA</td>
+                                    <td>2026</td>
+                                    <td>82.50%</td>
+
+                                    <td>
+                                        <span class="status active">
+                                            ACTIVE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 3 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">AM</span>
+
+                                            <span>
+                                                <strong>Aditya More</strong>
+                                                <span>
+                                                    CAN1003 · aditya.more@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Java</td>
+                                    <td>BTech</td>
+                                    <td>2025</td>
+                                    <td>74.20%</td>
+
+                                    <td>
+                                        <span class="status shortlisted">
+                                            SHORTLISTED
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 4 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">PS</span>
+
+                                            <span>
+                                                <strong>Priya Sharma</strong>
+                                                <span>
+                                                    CAN1004 · priya.sharma@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Testing</td>
+                                    <td>BE</td>
+                                    <td>2024</td>
+                                    <td>79.00%</td>
+
+                                    <td>
+                                        <span class="status joined">
+                                            PLACED
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 5 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">RD</span>
+
+                                            <span>
+                                                <strong>Rohan Desai</strong>
+                                                <span>
+                                                    CAN1005 · rohan.desai@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Java</td>
+                                    <td>BE</td>
+                                    <td>2025</td>
+                                    <td>71.60%</td>
+
+                                    <td>
+                                        <span class="status joined">
+                                            PLACED
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 6 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">KI</span>
+
+                                            <span>
+                                                <strong>Kavya Iyer</strong>
+                                                <span>
+                                                    CAN1006 · kavya.iyer@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Data Analytics</td>
+                                    <td>BSc</td>
+                                    <td>2026</td>
+                                    <td>85.10%</td>
+
+                                    <td>
+                                        <span class="status on-hold">
+                                            ON HOLD
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 7 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">VK</span>
+
+                                            <span>
+                                                <strong>Vikram Kulkarni</strong>
+                                                <span>
+                                                    CAN1007 · vikram.k@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Python</td>
+                                    <td>BTech</td>
+                                    <td>2025</td>
+                                    <td>66.40%</td>
+
+                                    <td>
+                                        <span class="status active">
+                                            ACTIVE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Candidate 8 -->
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <span class="mini-avatar">SN</span>
+
+                                            <span>
+                                                <strong>Sana Khan</strong>
+                                                <span>
+                                                    CAN1008 · sana.khan@example.com
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                    <td>Java</td>
+                                    <td>MCA</td>
+                                    <td>2026</td>
+                                    <td>88.00%</td>
+
+                                    <td>
+                                        <span class="status active">
+                                            ACTIVE
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="candidate-details.html">View</a>
+                                            <a href="candidate-form.html">Edit</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div
+                        class="panel-body"
+                        style="display: flex; justify-content: space-between; align-items: center;"
+                    >
+
+                        <span class="muted">Page 1 of 307</span>
+
+                        <div class="filter-actions">
+
+                            <button class="btn btn-secondary">
+                                Previous
+                            </button>
+
+                            <button class="btn btn-primary">
+                                1
+                            </button>
+
+                            <button class="btn btn-secondary">
+                                2
+                            </button>
+
+                            <button class="btn btn-secondary">
+                                Next
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System ·
+            Static HTML/CSS prototype ·
+            Sample data for demonstration only
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

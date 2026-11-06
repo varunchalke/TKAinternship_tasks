@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings | Recruitment & Placement Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+            </div>
+        </header>
+
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>Dashboard
+                    </a>
+
+                    <a class="nav-link" href="candidates.html">
+                        <span class="nav-icon">♙</span>Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>Companies
+                    </a>
+
+                    <a class="nav-link active" href="jobs.html">
+                        <span class="nav-icon">▣</span>Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>Reports
+                    </a>
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+                    Manage candidates, employer relationships, recruitment stages and placement outcomes from one place.
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+                        <h1>Job Openings</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a> / Job Openings
+                        </div>
+                    </div>
+
+                    <div class="head-actions">
+                        <a class="btn btn-primary" href="job-form.html">
+                            ＋ Create job
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Job Statistics -->
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Total openings
+                            <span class="stat-icon">▣</span>
+                        </div>
+
+                        <div class="stat-value">28</div>
+
+                        <div class="stat-foot">
+                            Across active job postings
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Active companies
+                            <span class="stat-icon">▤</span>
+                        </div>
+
+                        <div class="stat-value">12</div>
+
+                        <div class="stat-foot">
+                            Hiring partners
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Applications
+                            <span class="stat-icon">▧</span>
+                        </div>
+
+                        <div class="stat-value">1,200</div>
+
+                        <div class="stat-foot">
+                            For current job postings
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            Closing soon
+                            <span class="stat-icon">◷</span>
+                        </div>
+
+                        <div class="stat-value">5</div>
+
+                        <div class="stat-foot">
+                            Deadlines within 7 days
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Filter Job Openings -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Filter job openings</h2>
+                            <p>Find vacancies by company, technology, location and status</p>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <form class="filters">
+
+                            <div class="field">
+                                <label>Job code</label>
+                                <input placeholder="JOB-2026-001">
+                            </div>
+
+                            <div class="field">
+                                <label>Company</label>
+                                <select>
+                                    <option>All companies</option>
+                                    <option>Infosys</option>
+                                    <option>Persistent Systems</option>
+                                    <option>Tech Mahindra</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Technology</label>
+                                <select>
+                                    <option>All technologies</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>Testing</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Location</label>
+                                <input placeholder="City">
+                            </div>
+
+                            <div class="field">
+                                <label>Job status</label>
+                                <select>
+                                    <option>All statuses</option>
+                                    <option>OPEN</option>
+                                    <option>DRAFT</option>
+                                    <option>CLOSED</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Employment type</label>
+                                <select>
+                                    <option>All types</option>
+                                    <option>FULL_TIME</option>
+                                    <option>INTERNSHIP</option>
+                                    <option>CONTRACT</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-actions span-3">
+                                <button type="button" class="btn btn-primary">
+                                    Search jobs
+                                </button>
+
+                                <button type="reset" class="btn btn-secondary">
+                                    Reset
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </section>
+
+                <!-- Job Openings Table -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <div>
+                            <h2>Job openings</h2>
+                            <p>Browse and manage company requirements</p>
+                        </div>
+
+                        <span class="muted">12 job postings</span>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Job / Company</th>
+                                    <th>Technology</th>
+                                    <th>Openings</th>
+                                    <th>Location</th>
+                                    <th>Package</th>
+                                    <th>Deadline</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <strong>Associate Java Developer</strong>
+                                        <div class="muted">
+                                            JOB-2026-001 · Infosys
+                                        </div>
+                                    </td>
+
+                                    <td>Java, SQL</td>
+                                    <td>15</td>
+                                    <td>Pune</td>
+                                    <td>4.5–6 LPA</td>
+                                    <td>15 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status open">OPEN</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Graduate Engineer Trainee</strong>
+                                        <div class="muted">
+                                            JOB-2026-002 · Persistent
+                                        </div>
+                                    </td>
+
+                                    <td>Java, SQL</td>
+                                    <td>6</td>
+                                    <td>Pune</td>
+                                    <td>5–7 LPA</td>
+                                    <td>12 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status open">OPEN</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>QA Engineer</strong>
+                                        <div class="muted">
+                                            JOB-2026-004 · Persistent
+                                        </div>
+                                    </td>
+
+                                    <td>Testing, SQL</td>
+                                    <td>8</td>
+                                    <td>Mumbai</td>
+                                    <td>4–5 LPA</td>
+                                    <td>18 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status open">OPEN</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Python Trainee</strong>
+                                        <div class="muted">
+                                            JOB-2026-006 · Tech Mahindra
+                                        </div>
+                                    </td>
+
+                                    <td>Python, SQL</td>
+                                    <td>10</td>
+                                    <td>Pune</td>
+                                    <td>3.5–4.5 LPA</td>
+                                    <td>20 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status open">OPEN</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Support Associate</strong>
+                                        <div class="muted">
+                                            JOB-2026-008 · Wipro
+                                        </div>
+                                    </td>
+
+                                    <td>SQL, Communication</td>
+                                    <td>12</td>
+                                    <td>Nashik</td>
+                                    <td>3–4 LPA</td>
+                                    <td>28 Oct 2026</td>
+
+                                    <td>
+                                        <span class="status closed">CLOSED</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">View</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Software Test Engineer</strong>
+                                        <div class="muted">
+                                            JOB-2026-009 · Capgemini
+                                        </div>
+                                    </td>
+
+                                    <td>Testing, SQL</td>
+                                    <td>6</td>
+                                    <td>Mumbai</td>
+                                    <td>4–5.5 LPA</td>
+                                    <td>22 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status open">OPEN</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Junior Data Analyst</strong>
+                                        <div class="muted">
+                                            JOB-2026-010 · BluePeak Solutions
+                                        </div>
+                                    </td>
+
+                                    <td>Python, SQL</td>
+                                    <td>4</td>
+                                    <td>Nashik</td>
+                                    <td>3.8–4.8 LPA</td>
+                                    <td>25 Nov 2026</td>
+
+                                    <td>
+                                        <span class="status draft">DRAFT</span>
+                                    </td>
+
+                                    <td>
+                                        <div class="action-links">
+                                            <a href="job-form.html">Edit</a>
+                                            <a href="applications.html">Applications</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System · Static HTML/CSS prototype · Sample data for demonstration only
+        </footer>
+
+    </div>
+</body>
+</html>

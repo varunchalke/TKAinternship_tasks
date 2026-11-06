@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add / Edit Candidate | Recruitment & Placement Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">RP</span>
+
+                <span>
+                    Recruitment Portal
+                    <small>Placement Management System</small>
+                </span>
+            </a>
+
+            <div class="top-actions">
+
+                <span class="prototype-label">UI Prototype</span>
+
+                <div class="top-user">
+                    <span class="avatar">AK</span>
+
+                    <span class="user-meta">
+                        <strong>Arjun Kulkarni</strong>
+                        <span>Administrator</span>
+                    </span>
+                </div>
+
+                <a class="logout" href="login.html">Log out ↗</a>
+
+            </div>
+
+        </header>
+
+        <!-- Main Layout -->
+        <div class="layout">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <div class="side-label">Workspace</div>
+
+                <nav class="nav-list">
+
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">▦</span>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link active" href="candidates.html">
+                        <span class="nav-icon">♙</span>
+                        Candidates
+                    </a>
+
+                    <a class="nav-link" href="companies.html">
+                        <span class="nav-icon">▤</span>
+                        Companies
+                    </a>
+
+                    <a class="nav-link" href="jobs.html">
+                        <span class="nav-icon">▣</span>
+                        Jobs
+                    </a>
+
+                    <a class="nav-link" href="applications.html">
+                        <span class="nav-icon">▧</span>
+                        Applications
+                    </a>
+
+                    <a class="nav-link" href="interviews.html">
+                        <span class="nav-icon">◷</span>
+                        Interviews
+                    </a>
+
+                    <a class="nav-link" href="placement-process.html">
+                        <span class="nav-icon">✓</span>
+                        Placement Process
+                    </a>
+
+                    <a class="nav-link" href="reports.html">
+                        <span class="nav-icon">▥</span>
+                        Reports
+                    </a>
+
+                </nav>
+
+                <div class="side-note">
+                    <strong>Placement workspace</strong>
+
+                    Manage candidates, employer relationships,
+                    recruitment stages and placement outcomes
+                    from one place.
+                </div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- Page Heading -->
+                <div class="page-head">
+
+                    <div>
+                        <div class="eyebrow">Recruitment workspace</div>
+
+                        <h1>Add / Edit Candidate</h1>
+
+                        <div class="breadcrumb">
+                            <a href="dashboard.html">Dashboard</a>
+                            / Add / Edit Candidate
+                        </div>
+                    </div>
+
+                    <div class="head-actions">
+
+                        <a class="btn btn-secondary" href="candidates.html">
+                            ← Back to candidates
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Candidate Form -->
+                <section class="panel">
+
+                    <div class="panel-head">
+
+                        <div>
+                            <h2>Candidate profile</h2>
+
+                            <p>
+                                Enter personal, academic, skills and
+                                placement preference details
+                            </p>
+                        </div>
+
+                        <span class="status neutral">NEW PROFILE</span>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <!-- Information Notice -->
+                        <div class="notice notice-info">
+                            Fields marked as required should be completed.
+                            This HTML prototype does not save form data.
+                        </div>
+
+                        <form>
+
+                            <!-- Section 01: Personal Information -->
+                            <div class="form-section">
+
+                                <h3>01 · Personal information</h3>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Full name *</label>
+
+                                        <input
+                                            type="text"
+                                            required
+                                            placeholder="Enter candidate name"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Email *</label>
+
+                                        <input
+                                            type="email"
+                                            required
+                                            placeholder="name@example.com"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Mobile *</label>
+
+                                        <input
+                                            type="tel"
+                                            required
+                                            placeholder="10-digit mobile number"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Date of birth</label>
+
+                                        <input type="date">
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Gender</label>
+
+                                        <select>
+                                            <option>Select gender</option>
+                                            <option>Female</option>
+                                            <option>Male</option>
+                                            <option>Other</option>
+                                            <option>Prefer not to say</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Profile status *</label>
+
+                                        <select>
+                                            <option>ACTIVE</option>
+                                            <option>INACTIVE</option>
+                                            <option>ON_HOLD</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Section 02: Academic Information -->
+                            <div class="form-section">
+
+                                <h3>02 · Academic information</h3>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Qualification *</label>
+
+                                        <select required>
+                                            <option>Select qualification</option>
+                                            <option>BE</option>
+                                            <option>BTech</option>
+                                            <option>MCA</option>
+                                            <option>BSc</option>
+                                            <option>BCA</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>College *</label>
+
+                                        <input
+                                            type="text"
+                                            required
+                                            placeholder="College name"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>University</label>
+
+                                        <input
+                                            type="text"
+                                            placeholder="University name"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Passing year *</label>
+
+                                        <input
+                                            type="number"
+                                            required
+                                            placeholder="2025"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Percentage / CGPA *</label>
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            step="0.01"
+                                            required
+                                            placeholder="e.g. 68.50"
+                                        >
+
+                                        <small>
+                                            Enter percentage from 0 to 100.
+                                        </small>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Backlog count *</label>
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            value="0"
+                                            required
+                                        >
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Section 03: Skills -->
+                            <div class="form-section">
+
+                                <h3>03 · Skills</h3>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Primary technology *</label>
+
+                                        <select required>
+                                            <option>Select technology</option>
+                                            <option>Java</option>
+                                            <option>Python</option>
+                                            <option>Testing</option>
+                                            <option>Data Analytics</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Secondary skills</label>
+
+                                        <input
+                                            type="text"
+                                            placeholder="SQL, HTML, CSS"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Skill level</label>
+
+                                        <select>
+                                            <option>Basic</option>
+                                            <option>Intermediate</option>
+                                            <option>Advanced</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Section 04: Placement Preferences -->
+                            <div class="form-section">
+
+                                <h3>04 · Placement preferences</h3>
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label>Current location</label>
+
+                                        <input
+                                            type="text"
+                                            placeholder="Current city"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Preferred location</label>
+
+                                        <input
+                                            type="text"
+                                            placeholder="Preferred job city"
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Placement status</label>
+
+                                        <select>
+                                            <option>NOT_PLACED</option>
+                                            <option>PLACED</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Form Buttons -->
+                            <div class="form-footer">
+
+                                <a
+                                    class="btn btn-secondary"
+                                    href="candidates.html"
+                                >
+                                    Cancel
+                                </a>
+
+                                <button
+                                    class="btn btn-secondary"
+                                    type="reset"
+                                >
+                                    Reset
+                                </button>
+
+                                <button
+                                    class="btn btn-primary"
+                                    type="button"
+                                >
+                                    Save candidate (prototype)
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Recruitment & Placement Management System ·
+            Static HTML/CSS prototype ·
+            Sample data for demonstration only
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
